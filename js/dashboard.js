@@ -77,19 +77,31 @@ function getCookie(cname) {
 
 var key = getCookie("userName");
 var Data = {
-  akshay: { next_emi: 0, paid_total: 0, toal: 19780 },
-  adarsh: { next_emi: 825, paid_total: 0, toal: 19780 },
-  anurudh: { next_emi: 817, paid_total: 820, toal: 9804 },
+  akshay: { next_emi: 0, paid_total: 0, toal: 19780, mnths: 0, paid_mnths: 0 },
+  adarsh: {
+    next_emi: 825,
+    paid_total: 0,
+    toal: 19780,
+    mnths: 24,
+    paid_mnths: 0,
+  },
+  anurudh: {
+    next_emi: 817,
+    paid_total: 820,
+    toal: 9804,
+    mnths: 12,
+    paid_mnths: 1,
+  },
 };
 
-updateUI(
-  Data[key].next_emi,
-  Data[key].toal - Data[key].paid_total,
-  Data[key].paid_total
-);
+updateUI(key);
 
-function updateUI(nextEmi, balance, paid) {
-  document.getElementById("next_emi").innerText = nextEmi;
-  document.getElementById("balance_total").innerText = balance;
-  document.getElementById("paid_total").innerText = paid;
+function updateUI(key) {
+  data = Data[key];
+  document.getElementById("next_emi").innerText =
+    data.next_emi + " * " + (data.mnths - data.paid_mnths);
+  document.getElementById("balance_total").innerText =
+    data.toal - data.paid_total;
+  document.getElementById("paid_total").innerText =
+    data.paid_total + "/" + data.toal;
 }
