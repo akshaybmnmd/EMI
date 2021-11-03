@@ -42,11 +42,11 @@ function login(uName, pWord) {
   if (uName === "adarsh" && pWord === "8113817682") {
     setCookie("userName", uName, 365);
     setCookie("password", pWord, 365);
-    window.location.href = "Dashboard.html";
+    window.location.href = "Dashboard.php";
   } else if (uName === "anurudh" && pWord === "9207164986") {
     setCookie("userName", uName, 365);
     setCookie("password", pWord, 365);
-    window.location.href = "Dashboard.html";
+    window.location.href = "Dashboard.php";
   } else {
     document.cookie =
       "userName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";

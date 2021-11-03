@@ -204,6 +204,6 @@
         </div>
       </section> -->
     </main>
-    <script src="js/dashboard.js"></script>
+    <script src="js/dashboard.js?code=<?php echo rand()l ?>"></script>
   </body>
 </html>
