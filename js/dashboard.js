@@ -90,7 +90,7 @@ var Data = {
     paid_total: 1640,
     toal: 9804,
     mnths: 12,
-    paid_mnths: 1,
+    paid_mnths: 2,
   },
 };
 
