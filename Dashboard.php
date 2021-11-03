@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMI Transaction Dashboard</title>
-    <link rel="shortcut icon" href="images/bank.png" type="image/x-icon" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header
-      class="
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMI Transaction Dashboard</title>
+  <link rel="shortcut icon" href="images/bank.png" type="image/x-icon" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="
         bg-gradient-to-r
         from-purple-800
         via-indigo-400
         to-indigo-500
         py-2
         px-12
-      "
-    >
-      <div class="flex items-center">
-        <div class="flex items-center space-x-4 flex-grow">
-          <img
-            class="w-16 h-16 object-contain"
-            src="images/bank.png"
-            alt="logo"
-          />
-          <h1
-            class="
+      ">
+    <div class="flex items-center">
+      <div class="flex items-center space-x-4 flex-grow">
+        <img class="w-16 h-16 object-contain" src="images/bank.png" alt="logo" />
+        <h1 class="
               text-2xl
               md:text-3xl
               lg:text-3xl
               font-semibold
               text-purple-100
-            "
-          >
-            EMI Dashboard
-          </h1>
-        </div>
+            ">
+          EMI Dashboard
+        </h1>
+      </div>
 
-        <button
-          id="logout_button"
-          class="
+      <button id="logout_button" class="
             bg-transparent
             px-4
             py-2
@@ -55,50 +43,47 @@
             hover:bg-purple-600
             transition
             duration-700
-          "
-        >
-          Logout
-        </button>
-      </div>
-    </header>
+          ">
+        Logout
+      </button>
+    </div>
+  </header>
 
-    <main>
-      <!-- balance andd transaction  -->
-      <section class="max-w-screen-lg mx-auto px-12 my-12">
-        <div
-          class="
+  <main>
+    <!-- balance andd transaction  -->
+    <section class="max-w-screen-lg mx-auto px-12 my-12">
+      <div class="
             grid grid-cols-1
             md:grid-cols-3
             lg:grid-cols-3
             xl:grid-cols-3
             gap-10
-          "
-        >
-          <div class="bg-blue-200 rounded-lg shadow-xl p-6 box-border">
-            <h3 class="text-xl text-blue-600">Next EMI</h3>
-            <h1 class="text-4xl font-bold text-blue-700">
-              Rs <span id="next_emi">0</span>
-            </h1>
-          </div>
-
-          <div class="bg-red-200 rounded-lg shadow-xl p-6 box-border">
-            <h3 class="text-xl text-red-600">Balance</h3>
-            <h1 class="text-4xl font-bold text-red-700">
-              Rs <span id="balance_total">0</span>
-            </h1>
-          </div>
-
-          <div class="bg-green-200 rounded-lg shadow-xl p-6 box-border">
-            <h3 class="text-xl text-green-600">Paid</h3>
-            <h1 class="text-4xl font-bold text-green-700">
-              Rs <span id="paid_total">0</span>
-            </h1>
-          </div>
+          ">
+        <div class="bg-blue-200 rounded-lg shadow-xl p-6 box-border">
+          <h3 class="text-xl text-blue-600">Next EMI</h3>
+          <h1 class="text-4xl font-bold text-blue-700">
+            Rs <span id="next_emi">0</span>
+          </h1>
         </div>
-      </section>
 
-      <!-- desposit and withdraw  -->
-      <!-- <section class="max-w-screen-lg mx-auto px-12 my-12">
+        <div class="bg-red-200 rounded-lg shadow-xl p-6 box-border">
+          <h3 class="text-xl text-red-600">Balance</h3>
+          <h1 class="text-4xl font-bold text-red-700">
+            Rs <span id="balance_total">0</span>
+          </h1>
+        </div>
+
+        <div class="bg-green-200 rounded-lg shadow-xl p-6 box-border">
+          <h3 class="text-xl text-green-600">Paid</h3>
+          <h1 class="text-4xl font-bold text-green-700">
+            Rs <span id="paid_total">0</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- desposit and withdraw  -->
+    <!-- <section class="max-w-screen-lg mx-auto px-12 my-12">
         <div
           class="
             grid grid-cols-1
@@ -110,7 +95,7 @@
             rounded-lg
           "
         >-->
-      <!-- deposit  
+    <!-- deposit  
           <div>
             <h3 class="text-gray-500 text-2xl pb-4">Please Deposit</h3>
 
@@ -156,7 +141,7 @@
             </div>
           </div>-->
 
-      <!-- withdraw  
+    <!-- withdraw  
           <div>
             <h3 class="text-gray-500 text-2xl pb-4">Please Withdraw</h3>
 
@@ -203,7 +188,8 @@
           </div>
         </div>
       </section> -->
-    </main>
-    <script src="js/dashboard.js?code=<?php echo rand()l ?>"></script>
-  </body>
+  </main>
+  <script src="js/dashboard.js?code=<?php echo rand(); ?>"></script>
+</body>
+
 </html>
