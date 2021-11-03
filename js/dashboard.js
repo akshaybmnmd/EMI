@@ -87,7 +87,7 @@ var Data = {
   },
   anurudh: {
     next_emi: 817,
-    paid_total: 820,
+    paid_total: 1640,
     toal: 9804,
     mnths: 12,
     paid_mnths: 1,
