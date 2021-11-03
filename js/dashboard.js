@@ -80,10 +80,10 @@ var Data = {
   akshay: { next_emi: 0, paid_total: 0, toal: 19780, mnths: 0, paid_mnths: 0 },
   adarsh: {
     next_emi: 825,
-    paid_total: 0,
+    paid_total: 840,
     toal: 19780,
     mnths: 24,
-    paid_mnths: 0,
+    paid_mnths: 1,
   },
   anurudh: {
     next_emi: 817,
