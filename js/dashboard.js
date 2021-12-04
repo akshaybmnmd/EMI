@@ -85,13 +85,15 @@ var Data = {
     mnths: 24,
     paid_mnths: 1,
   },
+  // 840
   anurudh: {
     next_emi: 817,
-    paid_total: 1640,
+    paid_total: 2460,
     toal: 9804,
     mnths: 12,
-    paid_mnths: 2,
+    paid_mnths: 3,
   },
+  // 820, 820, 820
 };
 
 updateUI(key);
